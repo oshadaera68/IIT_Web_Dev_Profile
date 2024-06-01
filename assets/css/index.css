@@ -46,7 +46,6 @@ header {
   display: flex;
   list-style-type: none;
   gap: 40px;
-  cursor: pointer;
 }
 
 #logo {
@@ -58,10 +57,6 @@ header {
 #logo:hover {
   color: var(--hover-color);
   cursor: pointer;
-}
-
-a > #logo {
-  transform: scale(1);
 }
 
 /* Using Span words */
@@ -79,6 +74,7 @@ span {
 
 .navbar a:hover {
   color: var(--hover-color);
+  cursor: pointer;
 }
 
 /* Underline Effect in Navigation Bar */
