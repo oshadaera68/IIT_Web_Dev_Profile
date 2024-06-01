@@ -2,13 +2,18 @@
 :root {
   --primary: white;
   --logo-span-color: #189bf0;
-  --text-span-color:#2e3ae6;
+  --text-span-color: #2e3ae6;
+  --hover-color: #00ff55;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -34,6 +39,7 @@ header {
   padding: 16px 32px;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
+  transition: 0.5s ease left;
 }
 
 .navbar > ul {
@@ -47,13 +53,18 @@ header {
   font-size: 30px;
   text-decoration: none;
   color: var(--primary);
+}
+
+#logo:hover {
+  color: var(--hover-color);
   cursor: pointer;
 }
 
-#logo:hover{
-  color: rgb(0, 255, 0);
+a > #logo {
+  transform: scale(1);
 }
 
+/* Using Span words */
 span {
   color: var(--logo-span-color);
   font-family: "Clicker Script", cursive;
@@ -67,7 +78,7 @@ span {
 }
 
 .navbar a:hover {
-  color: rgb(0, 255, 85);
+  color: var(--hover-color);
 }
 
 /* Underline Effect in Navigation Bar */
@@ -111,7 +122,8 @@ span {
   background-size: cover;
 }
 
-#main-text{
+/* Infos */
+#main-text {
   position: absolute;
   top: 21vh;
   font-size: 4rem;
@@ -121,7 +133,7 @@ span {
   font-weight: 500;
 }
 
-#second-text{
+#second-text {
   position: absolute;
   top: 31vh;
   font-size: 4rem;
@@ -131,7 +143,7 @@ span {
   font-weight: 500;
 }
 
-#third-text{
+#third-text {
   position: absolute;
   top: 42vh;
   font-size: 4rem;
@@ -141,21 +153,18 @@ span {
   font-weight: 500;
 }
 
-#type{
+/* Typewriter */
+#type {
   position: absolute;
-  top: 54vh;
+  top: 53vh;
   font-size: 3.6rem;
-  left: 8.7vw;
+  left: 8.5vw;
   font-family: "Nunito Sans", sans-serif;
   color: var(--primary);
   font-weight: 500;
 }
 
-/* Typewriter */
-
 .typewriter {
-  /* font-size: 4rem; */
-  content: "I'm";
   font-weight: 500;
   border-right: 4px solid var(--primary);
   padding-right: 8px;
@@ -165,8 +174,67 @@ span {
 
 @keyframes blink {
   50% {
-      border-right: 4px solid transparent;
+    border-right: 4px solid transparent;
   }
+}
+
+/* Social Icons in home page */
+
+.social {
+  cursor: pointer;
+  border-radius: 35px;
+  background-color: #caf7e3;
+}
+
+a i {
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+a:hover i {
+  transform: scale(1);
+  color: var(--hover-color);
+}
+
+.link {
+  position: absolute;
+  color: var(--primary);
+  top: 65vh;
+  left: 8vw;
+  font-size: 65px;
+}
+
+.fb {
+  position: absolute;
+  color: var(--primary);
+  top: 65vh;
+  left: 12vw;
+  font-size: 65px;
+}
+
+.git {
+  position: absolute;
+  color: var(--primary);
+  top: 65vh;
+  left: 16vw;
+  font-size: 65px;
+}
+
+.yt {
+  position: absolute;
+  color: var(--primary);
+  top: 65vh;
+  left: 20vw;
+  font-size: 65px;
+}
+
+.wap {
+  position: absolute;
+  color: var(--primary);
+  top: 65vh;
+  left: 24vw;
+  font-size: 65px;
 }
 
 /* About */
