@@ -1,0 +1,206 @@
+/* Global Variables */
+:root {
+  --primary: white;
+  --logo-span-color: #189bf0;
+  --text-span-color:#2e3ae6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  height: 46px;
+  width: 100%;
+  font-size: 19px;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  cursor: pointer;
+}
+
+#logo {
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+#logo:hover{
+  color: rgb(0, 255, 0);
+}
+
+span {
+  color: var(--logo-span-color);
+  font-family: "Clicker Script", cursive;
+  font-weight: 600;
+}
+
+/* Navigation Bar Links */
+.navbar a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: rgb(0, 255, 85);
+}
+
+/* Underline Effect in Navigation Bar */
+.underline-text {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-text:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Image Setup */
+.img {
+  position: absolute;
+  width: 100%;
+  height: 105vh;
+  object-fit: cover;
+}
+
+/* Home */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#main-text{
+  position: absolute;
+  top: 21vh;
+  font-size: 4rem;
+  left: 8.7vw;
+  color: var(--primary);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+}
+
+#second-text{
+  position: absolute;
+  top: 31vh;
+  font-size: 4rem;
+  left: 8.7vw;
+  color: var(--primary);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+}
+
+#third-text{
+  position: absolute;
+  top: 42vh;
+  font-size: 4rem;
+  left: 8.7vw;
+  color: var(--primary);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+}
+
+#type{
+  position: absolute;
+  top: 54vh;
+  font-size: 3.6rem;
+  left: 8.7vw;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Typewriter */
+
+.typewriter {
+  /* font-size: 4rem; */
+  content: "I'm";
+  font-weight: 500;
+  border-right: 4px solid var(--primary);
+  padding-right: 8px;
+  animation: blink 3.5s infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes blink {
+  50% {
+      border-right: 4px solid transparent;
+  }
+}
+
+/* About */
+#about {
+  position: relative;
+  width: 100%;
+  height: 105vh;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Education */
+#education {
+  position: relative;
+  width: 100%;
+  height: 105vh;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Gallery */
+#gallery {
+  position: relative;
+  width: 100%;
+  height: 105vh;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Contact */
+#contact {
+  position: relative;
+  width: 100%;
+  height: 105vh;
+  background-position: center;
+  background-size: cover;
+}
