@@ -1,6 +1,10 @@
 class TypeWriter {
   constructor() {
-    this.textData = ["Full Stack Developer...", "Youtuber...", "Subtitle Creator..."];
+    this.textData = [
+      "Full Stack Developer...",
+      "Youtuber...",
+      "Web Developer...",
+    ];
     this.currentWord = "";
     this.word = "";
     this.count = 0;
