@@ -6,6 +6,28 @@
   --hover-color: #00ff55;
 }
 
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #875cd6; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -238,7 +260,7 @@ a:hover i {
   position: absolute;
   z-index: 1;
   width: 185px;
-  left: 98vh;
+  left: 97.5vh;
   top: 83vh;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
@@ -287,6 +309,7 @@ a:hover i {
   left: 65vw;
   top: 15vh;
   overflow: hidden;
+  z-index: 1;
 }
 
 .box::before {
@@ -325,7 +348,7 @@ a:hover i {
   position: absolute;
   inset: 30px;
   border: 6px solid #070a1c;
-  z-index: 3;
+  z-index: 4;
   border-radius: 50%;
   overflow: hidden;
 }
