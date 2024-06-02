@@ -15,23 +15,27 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #875cd6; 
+  background: #875cd6;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -174,8 +178,8 @@ span {
 /* Typewriter */
 #type {
   position: absolute;
-  top: 53vh;
-  font-size: 3.6rem;
+  top: 52.5vh;
+  font-size: 3.5rem;
   left: 8.5vw;
   font-family: "Nunito Sans", sans-serif;
   color: var(--primary);
@@ -218,7 +222,7 @@ a:hover i {
 .link {
   position: absolute;
   color: var(--primary);
-  top: 63vh;
+  top: 63.5vh;
   left: 8vw;
   font-size: 60px;
 }
@@ -226,7 +230,7 @@ a:hover i {
 .fb {
   position: absolute;
   color: var(--primary);
-  top: 63vh;
+  top: 63.5vh;
   left: 12vw;
   font-size: 60px;
 }
@@ -234,7 +238,7 @@ a:hover i {
 .git {
   position: absolute;
   color: var(--primary);
-  top: 63vh;
+  top: 63.5vh;
   left: 16vw;
   font-size: 60px;
 }
@@ -242,7 +246,7 @@ a:hover i {
 .yt {
   position: absolute;
   color: var(--primary);
-  top: 63vh;
+  top: 63.5vh;
   left: 20vw;
   font-size: 60px;
 }
@@ -250,7 +254,7 @@ a:hover i {
 .wap {
   position: absolute;
   color: var(--primary);
-  top: 63vh;
+  top: 63.5vh;
   left: 24vw;
   font-size: 60px;
 }
@@ -335,8 +339,8 @@ a:hover i {
   }
 }
 
-.box::after{
-  content: '';
+.box::after {
+  content: "";
   position: absolute;
   inset: 6px;
   background: #162052;
