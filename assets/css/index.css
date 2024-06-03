@@ -4,6 +4,7 @@
   --logo-span-color: #189bf0;
   --text-span-color: #2e3ae6;
   --hover-color: #00ff55;
+  --link-text-color: black;
 }
 
 /* scroll bar */
@@ -66,6 +67,7 @@ header {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   transition: 0.5s ease left;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar > ul {
@@ -131,7 +133,7 @@ span {
 .img {
   position: absolute;
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -311,7 +313,7 @@ a:hover i {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   left: 65vw;
-  top: 15vh;
+  top: 15.5vh;
   overflow: hidden;
   z-index: 1;
 }
@@ -370,16 +372,28 @@ a:hover i {
 #about {
   position: relative;
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
+}
+
+#about-text {
+  position: absolute;
+  z-index: 100;
+  color: var(--primary);
+  left: 46.3vw;
+  top: 9vh;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
 }
 
 /* Education */
 #education {
   position: relative;
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
@@ -388,7 +402,7 @@ a:hover i {
 #gallery {
   position: relative;
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
@@ -397,7 +411,7 @@ a:hover i {
 #contact {
   position: relative;
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
