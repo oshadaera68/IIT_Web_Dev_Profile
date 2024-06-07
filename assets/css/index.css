@@ -33,6 +33,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -66,7 +67,6 @@ header {
   padding: 16px 32px;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  transition: 0.5s ease left;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -202,7 +202,7 @@ span {
   }
 }
 
-/* Social Icons in home page */
+/* Social media Icons in home page */
 
 .social {
   cursor: pointer;
@@ -353,7 +353,6 @@ a:hover i {
 .content {
   position: absolute;
   inset: 30px;
-  border: 6px solid #070a1c;
   z-index: 4;
   border-radius: 50%;
   overflow: hidden;
@@ -366,6 +365,29 @@ a:hover i {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Button and button effects */
+
+.btn-box {
+  position: relative;
+  display: inline-block;
+  top: 73.5vh;
+  left: 11.5vw;
+  padding: 12px 28px;
+  background: #27ae60;
+  font-family: "Poppins", sans-serif;
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.btn-box:hover {
+  box-shadow: 0 0 5px var(--primary), 0 0 25px var(--primary),
+    0 0 50px var(--primary);
 }
 
 /* About */
@@ -382,10 +404,10 @@ a:hover i {
   z-index: 100;
   color: var(--primary);
   left: 46.3vw;
-  top: 9vh;
+  top: 8.5vh;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 45px;
 }
 
