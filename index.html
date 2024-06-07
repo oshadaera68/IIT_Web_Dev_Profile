@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="oshada eranga">
     <meta content="era boy">
+
+    <!-- main css file -->
     <link rel="stylesheet" href="assets/css/index.css" type="text/css">
+
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>My Profile | Era Boy</title>
@@ -34,7 +37,11 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body onload="myFunction()">
+
+    <!-- Pre Loader -->
+    <div id="preloader"></div>
+
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
@@ -49,6 +56,7 @@
         </nav>
     </header>
 
+    <!-- Home -->
     <section id="home" class="home">
         <img src="assets/images/back1.jpg" alt="base image 1" class="img">
         <div class="main">
@@ -92,20 +100,29 @@
         <a href="#about"><img src="assets/images/arrow.gif" alt="arrow image" class="arrow"></a>
     </section>
 
+    <!-- About -->
     <section id="about" class="about">
         <img src="assets/images/back2.jpg" alt="" class="img">
         <div class="main">
-            <h1 id="about-text"><span>A</span>bout <span>M</span>e..</h1>
+            <h1 id="about-text">
+                <span>A</span>bout <span>M</span>e..
+            </h1>
+
+            <p class="main-para">
+                Hello, I'm Oshada Eranga. My age is 22 years Old. I'm from in Ahangama.
+            </p>
         </div>
     </section>
 
+    <!-- Education -->
     <section id="education" class="education">
         <img src="assets/images/back3.jpg" alt="" class="img">
         <div class="main">
-            <h1 id="edu-text">Edu</h1>
+            <h1 id="edu-text">Education</h1>
         </div>
     </section>
 
+    <!-- Gallery -->
     <section id="gallery" class="gallery">
         <img src="assets/images/back4.jpg" alt="" class="img">
         <div class="main">
@@ -113,6 +130,7 @@
         </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="contact">
         <img src="assets/images/back5.jpg" alt="" class="img">
         <div class="main">
@@ -120,9 +138,12 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer></footer>
 
 </body>
+<!-- Js files -->
 <script src="assets/js/typewriter.js"></script>
+<script src="assets/js/script.js"></script>
 
 </html>

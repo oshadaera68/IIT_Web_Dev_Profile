@@ -67,7 +67,7 @@ header {
   padding: 16px 32px;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar > ul {
@@ -182,7 +182,7 @@ span {
   position: absolute;
   top: 52.5vh;
   font-size: 3.5rem;
-  left: 8.5vw;
+  left: 9vw;
   font-family: "Nunito Sans", sans-serif;
   color: var(--primary);
   font-weight: 500;
@@ -208,7 +208,10 @@ span {
   cursor: pointer;
   border-radius: 35px;
   background-color: #caf7e3;
+  letter-spacing: 3vh;
+  font-size: 60px;
 }
+
 
 a i {
   transition: all 0.3s linear;
@@ -224,41 +227,36 @@ a:hover i {
 .link {
   position: absolute;
   color: var(--primary);
-  top: 63.5vh;
-  left: 8vw;
-  font-size: 60px;
+  top: 62vh;
+  left: 8.5vw;
 }
 
 .fb {
   position: absolute;
   color: var(--primary);
-  top: 63.5vh;
-  left: 12vw;
-  font-size: 60px;
+  top: 62vh;
+  left: 12.5vw;
 }
 
 .git {
   position: absolute;
   color: var(--primary);
-  top: 63.5vh;
-  left: 16vw;
-  font-size: 60px;
+  top: 62vh;
+  left: 16.5vw;
 }
 
 .yt {
   position: absolute;
   color: var(--primary);
-  top: 63.5vh;
-  left: 20vw;
-  font-size: 60px;
+  top: 62vh;
+  left: 20.5vw;
 }
 
 .wap {
   position: absolute;
   color: var(--primary);
-  top: 63.5vh;
-  left: 24vw;
-  font-size: 60px;
+  top: 62vh;
+  left: 24.5vw;
 }
 
 /* Arrow Gif Image  */
@@ -372,7 +370,7 @@ a:hover i {
 .btn-box {
   position: relative;
   display: inline-block;
-  top: 73.5vh;
+  top: 72.5vh;
   left: 11.5vw;
   padding: 12px 28px;
   background: #27ae60;
@@ -390,6 +388,17 @@ a:hover i {
     0 0 50px var(--primary);
 }
 
+/* Loader */
+#preloader {
+  background: #000 url(../images/loader.gif) no-repeat center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
 /* About */
 #about {
   position: relative;
@@ -401,11 +410,10 @@ a:hover i {
 
 #about-text {
   position: absolute;
-  z-index: 100;
+  z-index: 1000;
   color: var(--primary);
   left: 46.3vw;
   top: 8.5vh;
-  justify-content: center;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 45px;
