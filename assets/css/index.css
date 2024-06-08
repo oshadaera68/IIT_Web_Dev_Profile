@@ -187,7 +187,7 @@ span {
   left: 9vw;
   font-family: "Nunito Sans", sans-serif;
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .typewriter {
@@ -260,8 +260,8 @@ a:hover i {
   position: absolute;
   z-index: 1;
   width: 185px;
-  left: 97.5vh;
-  top: 83vh;
+  left: 90vh;
+  top: 80vh;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
@@ -365,7 +365,7 @@ a:hover i {
   position: relative;
   display: inline-block;
   top: 72.5vh;
-  left: 11.5vw;
+  left: 10.5vw;
   padding: 12px 28px;
   background: #27ae60;
   font-family: "Poppins", sans-serif;
@@ -394,7 +394,7 @@ a:hover i {
   z-index: 1000;
   overflow: hidden;
   opacity: 1;
-  transition: opacity 1s ease; /* Ensure this line is present */
+  transition: opacity 1s ease;
 }
 
 /* About */
@@ -423,7 +423,7 @@ a:hover i {
   z-index: 100;
   top: 18vh;
   color: var(--primary);
-  font-size: 24px;
+  font-size: 25px;
   text-align: left;
   padding: 16px 28px;
 }
@@ -431,7 +431,7 @@ a:hover i {
 /* Button and button effects */
 .button-box {
   position: absolute;
-  top: 85vh;
+  top: 86.5vh;
   color: var(--primary);
   border-radius: 40px;
   padding: 12px 28px;
@@ -452,12 +452,12 @@ a:hover i {
 /* About Details */
 #column1 {
   position: absolute;
-  top: 62vh;
+  top: 60vh;
   color: var(--primary);
   font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
   padding: 2px 26px;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 #column1 i {
@@ -471,13 +471,13 @@ a:hover i {
 
 #column2 {
   position: absolute;
-  top: 62vh;
+  top: 59vh;
   left: 20vw;
   color: var(--primary);
   font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
   padding: 12px 30px;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 #column2 i {
@@ -489,6 +489,15 @@ a:hover i {
   color: var(--span-spec-color);
 }
 
+#img {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  left: 65vw;
+  top: 19vh;
+  border-radius: 75%;
+}
+
 /* Education */
 #education {
   position: relative;
@@ -496,6 +505,17 @@ a:hover i {
   height: 100vh;
   background-position: center;
   background-size: cover;
+}
+
+#edu-text {
+  position: absolute;
+  z-index: 100;
+  color: var(--primary);
+  left: 46.3vw;
+  top: 6vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
 }
 
 /* Gallery */
@@ -507,6 +527,17 @@ a:hover i {
   background-size: cover;
 }
 
+#gal-text {
+  position: absolute;
+  z-index: 100;
+  color: var(--primary);
+  left: 46.3vw;
+  top: 6vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+}
+
 /* Contact */
 #contact {
   position: relative;
@@ -514,4 +545,15 @@ a:hover i {
   height: 100vh;
   background-position: center;
   background-size: cover;
+}
+
+#con-text {
+  position: absolute;
+  z-index: 100;
+  color: var(--primary);
+  left: 46.3vw;
+  top: 6vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
 }
