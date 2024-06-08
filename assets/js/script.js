@@ -1,12 +1,12 @@
-// loading the id for the loader
+// Loading the id for the loader
 var preloader = document.getElementById("preloader");
 
-// loading functionality and fade effect
+// Loading functionality and fade effect
 function myFunction() {
     setTimeout(() => {
-        preloader.style.opacity = "0";
+        preloader.style.opacity = "0"; // Start fading out
         setTimeout(() => {
-            preloader.style.display = "none";
-        }, 2000);
-    }, 2000);
+            preloader.style.display = "none"; // Hide after fade-out completes
+        }, 1000); // This should match the transition duration in CSS
+    }, 2000); // Initial delay before starting fade out
 }
