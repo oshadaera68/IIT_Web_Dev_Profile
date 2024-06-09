@@ -5,7 +5,7 @@
   --text-span-color: #2e3ae6;
   --hover-color: #00ff55;
   --link-text-color: black;
-  --span-spec-color: #0b96f7;
+  --span-spec-color: #189bf0 ;
 }
 
 /* scroll bar */
@@ -404,6 +404,7 @@ a:hover i {
   height: 100vh;
   background-position: center;
   background-size: cover;
+  background-color: #6f4397;
 }
 
 #about-text {
@@ -431,7 +432,7 @@ a:hover i {
 /* Button and button effects */
 .button-box {
   position: absolute;
-  top: 86.5vh;
+  top: 85.5vh;
   color: var(--primary);
   border-radius: 40px;
   padding: 12px 28px;
