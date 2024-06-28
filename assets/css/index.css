@@ -5,7 +5,8 @@
   --text-span-color: #2e3ae6;
   --hover-color: #00ff55;
   --link-text-color: black;
-  --span-spec-color: #189bf0 ;
+  --span-spec-color: #9de0e8;
+  --scrollbar-thumb-color: #875cd6;
 }
 
 /* scroll bar */
@@ -22,7 +23,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #875cd6;
+  background: var(--scrollbar-thumb-color);
 }
 
 /* Handle on hover */
@@ -35,6 +36,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: var(--primary);
 }
 
 html {
@@ -404,14 +406,13 @@ a:hover i {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background-color: #6f4397;
 }
 
 #about-text {
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   color: var(--primary);
-  left: 46.3vw;
+  left: 44vw;
   top: 6vh;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -453,8 +454,8 @@ a:hover i {
 /* About Details */
 #column1 {
   position: absolute;
-  top: 60vh;
-  color: var(--primary);
+  top: 59vh;
+  color: var(--primary) !important;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
   padding: 2px 26px;
@@ -462,17 +463,17 @@ a:hover i {
 }
 
 #column1 i {
-  font-size: 28px;
+  font-size: 29px;
 }
 
 #column1 span {
   font-family: "Open Sans", sans-serif;
-  color: var(--span-spec-color);
+  color: var(--span-spec-color) !important;
 }
 
 #column2 {
   position: absolute;
-  top: 59vh;
+  top: 58.5vh;
   left: 20vw;
   color: var(--primary);
   font-family: "Nunito Sans", sans-serif;
@@ -482,12 +483,12 @@ a:hover i {
 }
 
 #column2 i {
-  font-size: 28px;
+  font-size: 29px;
 }
 
 #column2 span {
   font-family: "Open Sans", sans-serif;
-  color: var(--span-spec-color);
+  color: var(--span-spec-color) !important;
 }
 
 #img {
@@ -510,13 +511,40 @@ a:hover i {
 
 #edu-text {
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   color: var(--primary);
-  left: 46.3vw;
+  left: 44vw;
   top: 6vh;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 45px;
+}
+
+.primary-edu {
+  position: absolute;
+  z-index: 100;
+  top: 11rem;
+  left: 44rem;
+}
+
+.secondary-edu {
+  position: relative;
+  z-index: 100;
+}
+
+.eng-course {
+  position: relative;
+  z-index: 100;
+}
+
+.dip-course {
+  position: relative;
+  z-index: 100;
+}
+
+.degree {
+  position: relative;
+  z-index: 100;
 }
 
 /* Gallery */
@@ -530,9 +558,9 @@ a:hover i {
 
 #gal-text {
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   color: var(--primary);
-  left: 46.3vw;
+  left: 44vw;
   top: 6vh;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -550,11 +578,21 @@ a:hover i {
 
 #con-text {
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   color: var(--primary);
-  left: 46.3vw;
+  left: 44vw;
   top: 6vh;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 45px;
+}
+
+/* Up to link icon */
+.upicon {
+  position: fixed;
+  top: 45vw;
+  left: 95vw;
+  color: var(--primary);
+  font-size: 67px;
+  cursor: pointer;
 }
