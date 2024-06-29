@@ -7,6 +7,7 @@
   --link-text-color: black;
   --span-spec-color: #9de0e8;
   --scrollbar-thumb-color: #875cd6;
+  --rec-color: rgb(100, 22, 224);
 }
 
 /* scroll bar */
@@ -422,7 +423,7 @@ a:hover i {
 .main-para {
   position: absolute;
   font-family: "Open Sans", sans-serif;
-  z-index: 100;
+  z-index: 1;
   top: 18vh;
   color: var(--primary);
   font-size: 25px;
@@ -511,7 +512,6 @@ a:hover i {
 
 #edu-text {
   position: absolute;
-  z-index: 1;
   color: var(--primary);
   left: 44vw;
   top: 6vh;
@@ -520,31 +520,125 @@ a:hover i {
   font-size: 45px;
 }
 
+/* Content */
 .primary-edu {
   position: absolute;
-  z-index: 100;
-  top: 11rem;
-  left: 44rem;
+  top: 12rem;
+  left: 26rem;
+  background-color: var(--rec-color);
+  height: 6.5vh;
+  width: 25.5em !important;
+  font-size: 14px;
+}
+
+.primary-edu h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .secondary-edu {
-  position: relative;
-  z-index: 100;
+  position: absolute;
+  top: 18.5rem;
+  left: 59rem;
+  font-size: 14px;
+  height: 6.5vh;
+  width: 27.5em !important;
+  background-color: var(--rec-color);
+}
+
+.secondary-edu h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .eng-course {
-  position: relative;
-  z-index: 100;
+  position: absolute;
+  top: 25.5rem;
+  left: 29.5rem;
+  background-color: var(--rec-color);
+  height: 6.5vh;
+  width: 21.5em !important;
+  font-size: 14px;
+}
+
+.eng-course h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .dip-course {
-  position: relative;
-  z-index: 100;
+  position: absolute;
+  font-size: 14px;
+  top: 33rem;
+  left: 59rem;
+  height: 6.5vh;
+  width: 27.5em !important;
+  background-color: var(--rec-color);
+}
+
+.dip-course h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .degree {
-  position: relative;
-  z-index: 100;
+  position: absolute;
+  font-size: 14px;
+  height: 6.5vh;
+  width: 20.5em !important;
+  background-color: var(--rec-color);
+  top: 41rem;
+  left: 30.2rem;
+}
+
+.degree h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* Horizontal Lines */
+#primary {
+  position: absolute;
+  border: 4px solid var(--rec-color);
+  top: 50vh;
+  left: 32.1vw;
+  width: 70vh;
+  height: 1vh;
+  transform: rotate(90deg);
+  background-color: #f1f1f1;
+}
+
+#second-hr {
+  position: absolute;
+  border: 4px solid var(--rec-color);
+  top: 25vh;
+  left: 44vw;
+  width: 11vh;
+  height: 1vh;
+  transform: rotate(180deg);
+  background-color: #000;
+}
+
+#third-hr {
+  position: absolute;
+  border: 4px solid var(--rec-color);
+  top: 37vh;
+  left: 49.8vw;
+  width: 9.5vh;
+  height: 1vh;
+  transform: rotate(180deg);
+  background-color: #000;
+}
+
+#forth-hr {
+  position: absolute;
+  border: 4px solid var(--rec-color);
+  top: 49.5vh;
+  left: 44vw;
+  width: 11vh;
+  height: 1vh;
+  transform: rotate(180deg);
+  background-color: #000;
 }
 
 /* Gallery */
