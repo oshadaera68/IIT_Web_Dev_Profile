@@ -641,6 +641,28 @@ a:hover i {
   background-color: #000;
 }
 
+#fifth-hr {
+  position: absolute;
+  border: 4px solid var(--rec-color);
+  top: 63vh;
+  left: 49.8vw;
+  width: 9.5vh;
+  height: 1vh;
+  transform: rotate(180deg);
+  background-color: #000;
+}
+
+#sixth-hr {
+  position: absolute;
+  border: 4px solid var(--rec-color);
+  top: 77.5vh;
+  left: 44vw;
+  width: 11vh;
+  height: 1vh;
+  transform: rotate(180deg);
+  background-color: #000;
+}
+
 /* Gallery */
 #gallery {
   position: relative;
@@ -659,6 +681,41 @@ a:hover i {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 45px;
+}
+
+.image1 {
+  position: absolute;
+  z-index: 1;
+  top: 23vh;
+  left: 23vh;
+}
+
+/* Image width */
+.image1 img {
+  width: 49vh;
+  left: 23vh;
+}
+
+.btn-box2 {
+  position: absolute;
+  z-index: 1;
+  top: 49vh;
+  left: 39vh;
+  padding: 12px 28px;
+  background: #27ae60;
+  font-family: "Poppins", sans-serif;
+  border-radius: 40px;
+  font-size: 16px;
+  color: var(--primary);
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.45s ease;
+}
+.btn-box2:hover {
+  box-shadow: 0 0 5px var(--primary), 0 0 25px var(--primary),
+    0 0 50px var(--primary);
+  transform: scale(0.9);
 }
 
 /* Contact */
