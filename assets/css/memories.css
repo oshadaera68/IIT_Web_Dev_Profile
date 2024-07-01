@@ -1,0 +1,152 @@
+/* Global Variables */
+:root {
+  --primary: white;
+  --logo-span-color: #189bf0;
+  --text-span-color: #2e3ae6;
+  --hover-color: #00ff55;
+  --link-text-color: black;
+  --span-spec-color: #9de0e8;
+  --scrollbar-thumb-color: #875cd6;
+  --rec-color: rgb(100, 22, 224);
+}
+
+/* Applied All Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary);
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigaiton Bar */
+
+header {
+  position: fixed;
+  height: 46px;
+  width: 100%;
+  font-size: 19px;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 4px 32px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+
+#logo {
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+#logo:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+
+span {
+  color: var(--logo-span-color);
+  font-family: "Clicker Script", cursive;
+  font-weight: 600;
+}
+
+.navbar a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+
+/* Underline Effect in Navigation Bar */
+.underline-text {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-text:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Image setup */
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#IIT {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
