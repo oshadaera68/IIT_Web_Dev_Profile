@@ -623,8 +623,8 @@ a:hover i {
   position: absolute;
   border: 4px solid var(--rec-color);
   top: 36vh;
-  left: 50vw;
-  width: 7.5vw;
+  left: 100vh;
+  width: 6.5vw;
   height: 1vh;
   transform: rotate(180deg);
   background-color: #000;
@@ -633,8 +633,8 @@ a:hover i {
 #forth-hr {
   position: absolute;
   border: 4px solid var(--rec-color);
-  top: 48vh;
-  left: 44vw;
+  top: 50vh;
+  left: 88vh;
   width: 12vh;
   height: 1vh;
   transform: rotate(180deg);
@@ -644,9 +644,9 @@ a:hover i {
 #fifth-hr {
   position: absolute;
   border: 4px solid var(--rec-color);
-  top: 61.5vh;
-  left: 50.5vw;
-  width: 8vh;
+  top: 64.5vh;
+  left: 99.5vh;
+  width: 11vh;
   height: 1vh;
   transform: rotate(180deg);
   background-color: #000;
@@ -655,8 +655,8 @@ a:hover i {
 #sixth-hr {
   position: absolute;
   border: 4px solid var(--rec-color);
-  top: 75vh;
-  left: 44vw;
+  top: 78vh;
+  left: 88vh;
   width: 12vh;
   height: 1vh;
   transform: rotate(180deg);
@@ -686,13 +686,13 @@ a:hover i {
 .image1 {
   position: absolute;
   z-index: 1;
-  top: 23vh;
+  top: 25vh;
   left: 23vh;
 }
 
 /* Image width */
 .image1 img {
-  width: 49vh;
+  width: 53vh;
   left: 23vh;
 }
 
